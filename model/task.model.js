@@ -7,9 +7,8 @@ const taskSchema = new Schema(
     complete: { type: Boolean, default: false },
     dateFin: { type: Date },
     user: { type: Schema.Types.ObjectId, ref: "User" },
-  
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const TaskModel = model("Task", taskSchema);
